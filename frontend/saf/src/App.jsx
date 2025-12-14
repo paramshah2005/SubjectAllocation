@@ -1,7 +1,5 @@
-import Auth from "./pages/Auth";
-
 function App() {
-  return <Auth />;
+  return <h1>IT WORKS!!</h1>;
 }
 
 export default App;
