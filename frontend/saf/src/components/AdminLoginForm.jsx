@@ -44,7 +44,7 @@ export default function AdminLoginForm(){
         let result = await fetch("/api/auth/faculty/register", {
     method: "POST",
     body: JSON.stringify(item),
-    });
+        });
         setSubmitted(true)
         
         setEmail("")
