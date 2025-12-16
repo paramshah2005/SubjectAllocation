@@ -62,13 +62,11 @@ export default function FacultyRegisterForm() {
     return (
         <div className="w-screen h-screen flex flex-col sm:flex-row">
 
-            {/* LEFT PANEL */}
             <div className="hidden sm:flex bg-linear-to-br from-blue-300 to-blue-500 w-full h-1/4 md:w-1/2 md:h-full flex-col items-center justify-center">
                 <h2 className="text-4xl font-bold mb-4 text-black">Faculty Registration</h2>
                 <p className="text-black text-lg">Create a new faculty account</p>
             </div>
 
-            {/* RIGHT PANEL */}
             <div className="h-3/4 sm:h-full w-full md:w-1/2 flex flex-col justify-center items-center bg-white p-12">
 
                 <div className="w-full max-w-xs text-center mb-8">
@@ -84,7 +82,6 @@ export default function FacultyRegisterForm() {
 
                 <form onSubmit={handleSubmit} className="flex flex-col w-full max-w-xs gap-5">
 
-                    {/* NAME */}
                     <div className="flex flex-col">
                         <label className="text-sm font-medium text-gray-700 mb-1">Full Name</label>
                         <input
@@ -104,7 +101,6 @@ export default function FacultyRegisterForm() {
                         {nameError && <span className="text-red-500 text-sm mt-1">Name is required</span>}
                     </div>
 
-                    {/* EMAIL */}
                     <div className="flex flex-col">
                         <label className="text-sm font-medium text-gray-700 mb-1">Email</label>
                         <input
@@ -124,7 +120,6 @@ export default function FacultyRegisterForm() {
                         {emailError && <span className="text-red-500 text-sm mt-1">Email is required</span>}
                     </div>
 
-                    {/* PASSWORD */}
                     <div className="flex flex-col">
                         <label className="text-sm font-medium text-gray-700 mb-1">Password</label>
                         <input
@@ -144,7 +139,6 @@ export default function FacultyRegisterForm() {
                         {passwordError && <span className="text-red-500 text-sm mt-1">Password is required</span>}
                     </div>
 
-                    {/* ROLE */}
                     <div className="flex flex-col">
                         <label className="text-sm font-medium text-gray-700 mb-1">Professor Type</label>
                         <select
@@ -167,7 +161,6 @@ export default function FacultyRegisterForm() {
                         {roleError && <span className="text-red-500 text-sm mt-1">Select a role</span>}
                     </div>
 
-                    {/* SUBMIT */}
                     <button
                         type="submit"
                         className="w-full mt-2 py-3 bg-gray-800 text-white font-semibold rounded-md shadow-md hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 transition duration-200 text-lg"
