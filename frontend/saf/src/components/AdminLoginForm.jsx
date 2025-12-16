@@ -56,7 +56,7 @@ export default function AdminLoginForm(){
         <div className="w-screen h-screen flex flex-col sm:flex-row">
 
 
-            <div className="hidden sm:flex bg-gradient-to-br from-blue-300 to-blue-500 w-full h-1/4 md:w-1/2 md:h-full flex-col items-center justify-center">
+            <div className="hidden sm:flex bg-linear-to-br from-blue-300 to-blue-500 w-full h-1/4 md:w-1/2 md:h-full flex-col items-center justify-center">
                 <h2 className="text-4xl font-bold mb-4 text-black">Admin Panel</h2>
                 <p className="text-black text-lg">Secure access to your dashboard</p>
             </div>
